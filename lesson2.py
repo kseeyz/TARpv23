@@ -1,4 +1,5 @@
 import random
+from random import *
 
 # print("tund on alanud")
 # hilinemine = input("Kas õpilane on hilinenud?: ") #jah - a.lower(), JAH - a.upper(), Jah - a.capitalize(), jAH
@@ -72,19 +73,61 @@ import random
 
 
             #3
-arv1 = int(input("Введите первую длину стены комнаты (в сантиметрах): "))
-arv2 = int(input("Введите вторую длину стены комнаты (в сантиметрах): "))
+# arv1 = int(input("Введите первую длину стены комнаты (в сантиметрах): "))
+# arv2 = int(input("Введите вторую длину стены комнаты (в сантиметрах): "))
+#
+# S = arv1 * arv2
+# P = 2*(arv1 + arv2)
+# print("Периметр комнаты =", round(S, 2),"\nА площадь комнаты =", round(P, 2))
+#
+# remont = input("Хотите сделать ремонт? ")
+# if remont.capitalize() == "Да":
+#     print(input("Тогда сколько стоит квадратный метр замены пола? "))
 
-S = arv1 * arv2
-P = 2*(arv1 + arv2)
-print("Периметр комнаты =", round(S, 2),"\nА площадь комнаты =", round(P, 2))
-
-remont = input("Хотите сделать ремонт? ")
-if remont.capitalize() == "Да":
-    print(input("Тогда сколько стоит квадратный метр замены пола? "))
 
 
+            #4
 
+# def arvuta_allahindlus(alghind):
+#     if alghind >= 700:
+#         soodustus_protsentides = 30
+#         allahindlus = (soodustus_protsentides / 100) * alghind
+#         uus_hind = alghind - allahindlus
+#         print(f"Uus hind pärast 30% allahindlust on: {uus_hind}")
+#     else:
+#         print("Tootesoodustus algab 700€-st, seega 30% allahindlust ei saa")
+#
+# alghind = float(input("Sisestage alghind: "))
+# uus_hind = arvuta_allahindlus(alghind)
+
+
+
+            #5
+
+# def kontrolli_temperatuuri(temperatuur):
+#     if temperatuur >= 18:
+#         print("Temperatuur on üle 18 kraadi, mis on soovitav toasoojus talvel.")
+#     else:
+#         print("Temperatuur on 18 kraadi või madalam, soovitav on hoida soojem temperatuur talvel.")
+#
+# temperatuur = float(input("Mis temperatuur täna väljas on?: "))
+# kontrolli_temperatuuri(temperatuur)
+
+
+
+            #6
+
+
+pikkus = int(input("Mis on sinu pikkus?: "))
+print("Sa oled", pikkus)
+if pikkus < 150 >= 168:
+    pikk = "lühike"
+elif pikkus < 169 >= 177:
+    pikk = "keskmine"
+else:
+    pikk = "pikk"
+print()
+print("Sa oled", pikk)
 
 
 
