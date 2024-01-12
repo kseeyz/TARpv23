@@ -2,6 +2,7 @@ import math
 from math import *
 
 
+
 print("Ruudu karakteristikud")
 a = input("Sisesta ruudu külje pikkus => ")
 S = float(a) ** 2
