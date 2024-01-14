@@ -120,14 +120,13 @@ from random import *
 
 pikkus = int(input("Mis on sinu pikkus?: "))
 print("Sa oled", pikkus)
-if pikkus < 150 >= 168:
-    pikk = "lühike"
-elif pikkus < 169 >= 177:
-    pikk = "keskmine"
+if 150 <= pikkus < 168:
+    pikkasvu = "lühike"
+elif 169 <= pikkus < 177:
+    pikkasvu = "keskmine"
 else:
-    pikk = "pikk"
-print()
-print("Sa oled", pikk)
+    pikkasvu = "pikk"
+print(f'Sa oled {pikkasvu}')
 
 
 
