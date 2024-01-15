@@ -1,5 +1,6 @@
 import random
 from random import *
+import math
 
 # print("tund on alanud")
 # hilinemine = input("Kas õpilane on hilinenud?: ") #jah - a.lower(), JAH - a.upper(), Jah - a.capitalize(), jAH
@@ -118,15 +119,164 @@ from random import *
             #6
 
 
-pikkus = int(input("Mis on sinu pikkus?: "))
-print("Sa oled", pikkus)
-if 150 <= pikkus < 168:
-    pikkasvu = "lühike"
-elif 169 <= pikkus < 177:
-    pikkasvu = "keskmine"
+# pikkus = int(input("Mis on sinu pikkus?: "))
+# print("Sa oled", pikkus)
+# if 150 <= pikkus < 168:
+#     pikkasvu = "lühike"
+# elif 169 <= pikkus < 177:
+#     pikkasvu = "keskmine"
+# else:
+#     pikkasvu = "pikk"
+# print(f'Sa oled {pikkasvu}')
+
+        #7
+
+
+# def pikkus_ja_sugu(pikkus, sugu):
+#     if sugu.lower() == 'mees':
+#         if pikkus < 165:
+#             print("Sa oled lühike mees.")
+#         elif 165 <= pikkus < 180:
+#             print("Sa oled keskmise pikkusega mees.")
+#         else:
+#             print("Sa oled pikk mees.")
+#     elif sugu.lower() == 'naine':
+#         if pikkus < 155:
+#             print("Sa oled lühike naine.")
+#         elif 155 <= pikkus < 170:
+#             print("Sa oled keskmise pikkusega naine.")
+#         else:
+#             print("Sa oled pikk naine.")
+#     else:
+#         print("Palun sisestage kehtiv sugu.")
+#
+# pikkus = float(input("Mis on sinu pikkus? (cm): "))
+# sugu = input("Mis on sinu sugu? ('mees' või 'naine'): ")
+#print()
+# pikkus_ja_sugu(pikkus, sugu)
+
+
+
+
+        #9
+
+
+
+# def kas_on_ruut(kulg1, kulg2):
+
+
+
+
+        #10
+
+# print("Подсказка:")
+# print("+  сложение")
+# print("—  вычитание")
+# print("*  умножение")
+# print("/  деление")
+# print("%  остаток от деления")
+# print("** возведение в степень")
+# print("// целочисленное деление")
+# what = input('Что делаем? (+, -, *, /, **, %, //): ')
+#
+# #   +   добавление
+# #   —   вычитание
+# #   *   умножение
+# #   /   деление
+# #   %   остаток от деления
+# #   **  возведение в степень
+# #   //  целочисленное деление
+#
+# a = float(input('Введи первое число: '))
+# b = float(input('Введи второе число: '))
+#
+# if what == '+':
+#     c = a + b
+#     print('Результат: ' + str(c))
+# elif what == '-':
+#     c = a - b
+#     print('Результат: ' + str(c))
+# elif what == '*':
+#     c = a * b
+#     print('Результат: ' + str(c))
+# elif what == '%':
+#     c = a % b
+#     print('Результат: ' + str(c))
+# elif what == '/':
+#     c = a / b
+#     print('Результат: ' + str(c))
+# elif what == '**':
+#     c = a ** b
+#     print('Результат: ' + str(c))
+# elif what == '//':
+#     c = a // b
+#     print('Результат: ' + str(c))
+# else:
+#     print('Я не знаю такой команды')
+#
+# input()
+
+        #12
+
+
+# def toote_allahindlus(alghind):
+#     if alghind == 10:
+#         soodustusprotsent = 10
+#         allahindlus = (soodustusprotsent / 100) * alghind
+#         uus_hind = alghind - allahindlus
+#         print(f"Uus hind pärast 10% allahindlust on: {uus_hind}")
+#     elif alghind > 10:
+#         soodusprotsent2 = 20
+#         allahindlus2 = (soodusprotsent2 / 100) * alghind
+#         uus_hind2 = alghind - allahindlus2
+#         print(f'Uus hind pärast 20% allahindlust on: {uus_hind2}')
+#
+# alghind = float(input("Sisestage alghind: "))
+# uus_hind = toote_allahindlus(alghind)
+
+
+
+        #13
+
+# sugu = input("Mis on sinu sugu ('Mees' või 'Näine')?: ")
+# if sugu.capitalize() == "Näine":
+#     print("sa ei sobi meile!")
+# elif sugu.capitalize() == "Mees":
+#     vanus = int(input("Kui vana sa oled?: "))
+#     if 16 <= vanus <= 18:
+#         print("Sa sobid meile!")
+#     else:
+#         print("Sa ei sobi meile!")
+
+
+        #14
+inimeste_arv = int(input("Sisestage, kui palju inimesi bussis sõida:"))
+print()
+bussi_maht = int(input("Valige siini helitugevus \n"
+                       "1) eriti väike (kuni 10 istekohta)\n"
+                       "2) väike (kuni 25)\n"
+                       "3) keskmine (40–50)\n"
+                       "4) suur (60-80)\n"
+                       "5) eriti suur mahutavus (100-120 istekohta): "))
+print()
+if inimeste_arv <= 10 and bussi_maht == 1:
+    print("Люди поместяться в автобус")
 else:
-    pikkasvu = "pikk"
-print(f'Sa oled {pikkasvu}')
-
-
+    print("Люди не вместяться")
+if 11 < inimeste_arv <= 30 and bussi_maht == 2:
+    print("Люди поместяться")
+else:
+    print("Люди не поместяться")
+if 40 <= inimeste_arv <= 50 and bussi_maht == 3:
+    print("Люди поместяться в автобус")
+else:
+    print("Люди не вместяться")
+if 60 <= inimeste_arv <= 80 and bussi_maht == 4:
+    print("Люди поместяться")
+else:
+    print("Люди не вместяться")
+if 100 < inimeste_arv <= 120 and bussi_maht == 5:
+    print("Люди поместяться")
+else:
+    print("Люди не вместяться")
 
