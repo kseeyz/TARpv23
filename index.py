@@ -32,7 +32,7 @@ if index1 == 1:
                 elif index >= 41:
                     index2 = "Tervisele ohtlik rasvumine"
 
-                print("Sul on", index2)
+                print("Sinu keha indeks on", index2)
                     #print("Sinu keha indeks on Tervisele ohtlik rasvumine!")
     except:
         print(ValueError)
