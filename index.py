@@ -1,6 +1,6 @@
 print("Tere! Olen sinu uus sõber - Python!")
 nimi = input("Mis on sinu nimi?: ")
-print(nimi, ", oi kui ilus nimi!!!")
+print(nimi.capitalize(), ", oi kui ilus nimi!!!")
 
 index1 = int(input('kas leian Sinu keha indeksi? 0-ei, 1-jah => '))
 if index1 == 1:
@@ -29,10 +29,10 @@ if index1 == 1:
                 elif 35 <= index < 40:
                     #print("Sinu keha indeks on tugev rasvumine!")
                     index2 = "tugev rasvumine"
-                elif index <= 41:
+                elif index >= 41:
                     index2 = "Tervisele ohtlik rasvumine"
 
-                print(index2)
+                print("Sul on", index2)
                     #print("Sinu keha indeks on Tervisele ohtlik rasvumine!")
     except:
         print(ValueError)
@@ -42,4 +42,4 @@ if index1 == 1:
 elif index1 == 0:
     print("Okey, head aega!")
 
-
+print("Kohtumiseni, " + nimi.capitalize() + " Igavesti Sinu, Python!")
