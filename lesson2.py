@@ -61,15 +61,27 @@ import math
 
 
             #2
-# def genereeri_nimed():
-#     nimed = ["Kirill", "Bogdan", "Vsevolod", "Gleb", "Martin", "Lev", "Sasha", "Elena", "Eva", "Mike"]
-#     valitud_nimed = random.sample(nimed, 2)
-#     return valitud_nimed
+
+# import random
+# nimed = choice(["Kirill", "Bogdan", "Vsevolod", "Gleb", "Martin", "Lev", "Sasha", "Elena", "Eva", "Mike"])
+# valitud_nimed = random.sample(nimed, len(nimed))
 #
-# pinginaabrid = genereeri_nimed()
-# nimed = f"{pinginaabrid[0]} ja {pinginaabrid[1]}"
 #
-# print(f"Täna on pinginaabriteks {nimed}!")
+#
+# print(f"Täna sinu pinginaaber on {nimed}!")
+
+            #2.1
+
+
+    # def genereeri_nimed():
+    #     nimed = ["Kirill", "Bogdan", "Vsevolod", "Gleb", "Martin", "Lev", "Sasha", "Elena", "Eva", "Mike"]
+    #     valitud_nimed = random.sample(nimed, 2)
+    #     return valitud_nimed
+    #
+    # pinginaabrid = genereeri_nimed()
+    # nimed = f"{pinginaabrid[0]} ja {pinginaabrid[1]}"
+    #
+    # print(f"Täna on pinginaabriteks {nimed}!")
 
 
 
@@ -89,30 +101,52 @@ import math
 
             #4
 
-# def arvuta_allahindlus(alghind):
-#     if alghind >= 700:
-#         soodustus_protsentides = 30
-#         allahindlus = (soodustus_protsentides / 100) * alghind
-#         uus_hind = alghind - allahindlus
-#         print(f"Uus hind pärast 30% allahindlust on: {uus_hind}")
-#     else:
-#         print("Tootesoodustus algab 700€-st, seega 30% allahindlust ei saa")
-#
-# alghind = float(input("Sisestage alghind: "))
-# uus_hind = arvuta_allahindlus(alghind)
+# alghind = randint(0, 1000)
+# print(alghind)
+# if alghind >= 700:
+#     soodus_protsentides = 30
+#     allahindlus = (soodus_protsentides/ 100) * 30
+#     uus_hind = alghind - allahindlus
+#     print(f"Uus hind pärast 30% allahindlust on: {uus_hind}", )
+# else:
+#     print("Tootesoodustus algab 700€-st, seega 30% allahindlust ei saa")
 
 
+            #4.1
+
+    # def arvuta_allahindlus(alghind):
+    #     if alghind >= 700:
+    #         soodustus_protsentides = 30
+    #         allahindlus = (soodustus_protsentides / 100) * alghind
+    #         uus_hind = alghind - allahindlus
+    #         print(f"Uus hind pärast 30% allahindlust on: {uus_hind}")
+    #     else:
+    #         print("Tootesoodustus algab 700€-st, seega 30% allahindlust ei saa")
+    #
+    #
+    # alghind = float(input("Sisestage alghind: "))
+    # uus_hind = arvuta_allahindlus(alghind)
 
             #5
 
-# def kontrolli_temperatuuri(temperatuur):
-#     if temperatuur >= 18:
-#         print("Temperatuur on üle 18 kraadi, mis on soovitav toasoojus talvel.")
-#     else:
-#         print("Temperatuur on 18 kraadi või madalam, soovitav on hoida soojem temperatuur talvel.")
-#
-# temperatuur = float(input("Mis temperatuur täna väljas on?: "))
-# kontrolli_temperatuuri(temperatuur)
+# temperatuur = randint(1, 20)
+# print(temperatuur)
+# if temperatuur >= 18:
+#     print("Temperatuur on üle 18 kraadi, mis on soovitav toasoojus talvel.")
+# else:
+#     print("Temperatuur on 18 kraadi või madalam, soovitav on hoida soojem temperatuur talvel.")
+
+
+            #5.2
+
+    # def kontrolli_temperatuuri(temperatuur):
+    #     if temperatuur >= 18:
+    #         print("Temperatuur on üle 18 kraadi, mis on soovitav toasoojus talvel.")
+    #     else:
+    #         print("Temperatuur on 18 kraadi või madalam, soovitav on hoida soojem temperatuur talvel.")
+    #
+    # temperatuur = float(input("Mis temperatuur täna väljas on?: "))
+    # kontrolli_temperatuuri(temperatuur)
 
 
 
@@ -124,50 +158,110 @@ import math
 # if 150 <= pikkus < 168:
 #     pikkasvu = "lühike"
 # elif 169 <= pikkus < 177:
-#     pikkavu = "keskm/ine"
+#     pikkavu = "keskmine"
 # else:
 #     pikkasvu = "pikk"
 # print(f'Sa oled {pikkasvu}')
 
-        #7
+            #7
 
-
-# def pikkus_ja_sugu(pikkus, sugu):
-#     if sugu.lower() == 'mees':
-#         if pikkus < 165:
-#             print("Sa oled lühike mees.")
-#         elif 165 <= pikkus < 180:
-#             print("Sa oled keskmise pikkusega mees.")
-#         else:
-#             print("Sa oled pikk mees.")
-#     elif sugu.lower() == 'naine':
-#         if pikkus < 155:
-#             print("Sa oled lühike naine.")
-#         elif 155 <= pikkus < 170:
-#             print("Sa oled keskmise pikkusega naine.")
-#         else:
-#             print("Sa oled pikk naine.")
+# pikkus = randint(140, 210)
+# print(pikkus)
+# sugu = choice(['mees', 'näine'])
+# print(sugu)
+# if sugu.lower() == 'mees':
+#     if pikkus < 165:
+#         print("Sa oled lühike mees.")
+#     elif 165 <= pikkus < 180:
+#         print("Sa oled keskmise pikkusega mees.")
 #     else:
-#         print("Palun sisestage kehtiv sugu.")
+#         print("Sa oled pikk mees.")
+# elif sugu.lower() == 'naine':
+#     if pikkus < 155:
+#         print("Sa oled lühike naine.")
+#     elif 155 <= pikkus < 170:
+#         print("Sa oled keskmise pikkusega naine.")
+#     else:
+#         print("Sa oled pikk naine.")
+# else:
+#     print("Palun sisestage kehtiv sugu.")
+
+            #7.2
+
+    # def pikkus_ja_sugu(pikkus, sugu):
+    #     if sugu.lower() == 'mees':
+    #         if pikkus < 165:
+    #             print("Sa oled lühike mees.")
+    #         elif 165 <= pikkus < 180:
+    #             print("Sa oled keskmise pikkusega mees.")
+    #         else:
+    #             print("Sa oled pikk mees.")
+    #     elif sugu.lower() == 'naine':
+    #         if pikkus < 155:
+    #             print("Sa oled lühike naine.")
+    #         elif 155 <= pikkus < 170:
+    #             print("Sa oled keskmise pikkusega naine.")
+    #         else:
+    #             print("Sa oled pikk naine.")
+    #     else:
+    #         print("Palun sisestage kehtiv sugu.")
+
+    # pikkus = float(input("Mis on sinu pikkus? (cm): "))
+    # sugu = input("Mis on sinu sugu? ('mees' või 'naine'): ")
+    #print()
+    # pikkus_ja_sugu(pikkus, sugu)
+
+
+            #8        ????????????
+
+
+# milk = input("Kas sa tahad piima osta?: ")
+# milk_cost = 1.65
+# bread_cost = 2
+# apples_cost = 3.45
+# if milk.capitalize() == "Jah":
+#     milk_int = int(input("kui palju sa tahad?: "))              #milk
+#     milk1 = milk_cost * milk_int
+#     print(f"See läheb maksma {milk1}")
+# elif milk.capitalize() == "Ei":
+#     bread = input("Kas sa tahad leiba osta?: ")
+#     if bread.capitalize() == "Jah":
+#         bread_int = int(input("Kui palju sa tahad osta?: "))    #bread
+#         bread1 = bread_cost * bread_int
+#         print(f"See läheb maksma {bread1}")
+#     elif bread.capitalize() == "Ei":
+#         apples = input("Kas sa tahad õuna osta?: ")             #apples
+#         apples_int = int(input("Kui palju sa tahad osta?: "))
+#         apples1 = apples_cost * apples_int
+#         print(f"See läheb maksma {apples1}")
 #
-# pikkus = float(input("Mis on sinu pikkus? (cm): "))
-# sugu = input("Mis on sinu sugu? ('mees' või 'naine'): ")
-#print()
-# pikkus_ja_sugu(pikkus, sugu)
+# total_amount = apples1 + bread1 + milk1
+#
+# all = input("Kas see on kõik? ")
+# if all.capitalize() == "Jah":
+#     print(f"Sinult {total_amount}€")
 
 
 
 
-        #9
 
 
 
-# def kas_on_ruut(kulg1, kulg2):
+            #9
+
+
+# kylg1 = int(input("Sisestage kujundi esimene külg (cm): "))
+# kylg2 = int(input("sisestage kujundi teine külg (cm): "))
+# if kylg1 == kylg2:
+#     print("See on ruut!")
+# else:
+#     print("See ei ole ruut")
 
 
 
 
-        #10
+
+            #10
 
 # print("Подсказка:")
 # print("+  сложение")
@@ -216,7 +310,25 @@ import math
 #
 # input()
 
-        #12
+
+            #11
+
+# import datetime
+#
+# birthday = input("Sisestage oma sünnipäev (YYYY-MM-DD): ")
+#
+# birthday = datetime.datetime.strptime(birthday, "%Y.%m.%d")
+# current_date = datetime.datetime.now()
+# age = current_date.year - birthday.year
+#
+# if age % 10 == 0:
+#     print("teie sünnipäev on tähtpäev")
+# else:
+#     print("teie sünnipäev ei ole tähtpäev")
+
+
+
+            #12
 
 
 # def toote_allahindlus(alghind):
@@ -236,7 +348,7 @@ import math
 
 
 
-        #13
+            #13
 
 # sugu = input("Mis on sinu sugu ('Mees' või 'Näine')?: ")
 # if sugu.capitalize() == "Näine":
@@ -249,7 +361,9 @@ import math
 #         print("Sa ei sobi meile!")
 
 
-        #14
+            #14
+
+
 # inimeste_arv = int(input("Sisestage, kui palju inimesi bussis sõida:"))
 # print()
 # bussi_maht = int(input("Valige siini helitugevus \n"
@@ -297,7 +411,7 @@ import math
 #
 # elif inimeste_arv <= 50 and bussi_maht == 3:
 #     print("Люди поместяться в автобус 3")
-# 
+#
 # elif inimeste_arv <= 80 and bussi_maht == 4:
 #     print("Люди поместяться 4")
 #
@@ -305,3 +419,6 @@ import math
 #     print("Люди поместяться 5")
 # else:
 #     print("Люди не вместяться")
+
+
+
