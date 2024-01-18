@@ -119,12 +119,12 @@ import math
             #6
 
 
-# pikkus = int(input("Mis on sinu pikkus?: "))
+# pikkus= int(input("Mis on sinu pikkus?: "))
 # print("Sa oled", pikkus)
 # if 150 <= pikkus < 168:
 #     pikkasvu = "lühike"
 # elif 169 <= pikkus < 177:
-#     pikkasvu = "keskmine"
+#     pikkavu = "keskm/ine"
 # else:
 #     pikkasvu = "pikk"
 # print(f'Sa oled {pikkasvu}')
@@ -250,33 +250,58 @@ import math
 
 
         #14
-inimeste_arv = int(input("Sisestage, kui palju inimesi bussis sõida:"))
-print()
-bussi_maht = int(input("Valige siini helitugevus \n"
-                       "1) eriti väike (kuni 10 istekohta)\n"
-                       "2) väike (kuni 25)\n"
-                       "3) keskmine (40–50)\n"
-                       "4) suur (60-80)\n"
-                       "5) eriti suur mahutavus (100-120 istekohta): "))
-print()
-if inimeste_arv <= 10 and bussi_maht == 1:
-    print("Люди поместяться в автобус")
-else:
-    print("Люди не вместяться")
-if 11 < inimeste_arv <= 30 and bussi_maht == 2:
-    print("Люди поместяться")
-else:
-    print("Люди не поместяться")
-if 40 <= inimeste_arv <= 50 and bussi_maht == 3:
-    print("Люди поместяться в автобус")
-else:
-    print("Люди не вместяться")
-if 60 <= inimeste_arv <= 80 and bussi_maht == 4:
-    print("Люди поместяться")
-else:
-    print("Люди не вместяться")
-if 100 < inimeste_arv <= 120 and bussi_maht == 5:
-    print("Люди поместяться")
-else:
-    print("Люди не вместяться")
+# inimeste_arv = int(input("Sisestage, kui palju inimesi bussis sõida:"))
+# print()
+# bussi_maht = int(input("Valige siini helitugevus \n"
+#                        "1) eriti väike (kuni 10 istekohta)\n"
+#                        "2) väike (kuni 25)\n"
+#                        "3) keskmine (40–50)\n"
+#                        "4) suur (60-80)\n"
+#                        "5) eriti suur mahutavus (100-120 istekohta): "))
+# print()
+# if inimeste_arv <= 10 and bussi_maht == 1:
+#     print("Люди поместяться в автобус")
+# else:
+#     print("Люди не вместяться")
+# if 11 < inimeste_arv <= 30 and bussi_maht == 2:
+#     print("Люди поместяться")
+# else:
+#     print("Люди не поместяться")
+# if 40 <= inimeste_arv <= 50 and bussi_maht == 3:
+#     print("Люди поместяться в автобус")
+# else:
+#     print("Люди не вместяться")
+# if 60 <= inimeste_arv <= 80 and bussi_maht == 4:
+#     print("Люди поместяться")
+# else:
+#     print("Люди не вместяться")
+# if 100 < inimeste_arv <= 120 and bussi_maht == 5:
+#     print("Люди поместяться")
+# else:
+#     print("Люди не вместяться")
 
+# inimeste_arv = int(input("Sisestage, kui palju inimesi bussis sõida:"))
+# print()
+# bussi_maht = int(input("Valige siini helitugevus \n"
+#                        "1) eriti väike (kuni 10 istekohta)\n"
+#                        "2) väike (kuni 25)\n"
+#                        "3) keskmine (40–50)\n"
+#                        "4) suur (60-80)\n"
+#                        "5) eriti suur mahutavus (100-120 istekohta): "))
+# print()
+# if inimeste_arv <= 10 and bussi_maht == 1:
+#     print("Люди поместяться в автобус 1")
+#
+# elif inimeste_arv <= 30 and bussi_maht == 2:
+#     print("Люди поместяться 2")
+#
+# elif inimeste_arv <= 50 and bussi_maht == 3:
+#     print("Люди поместяться в автобус 3")
+# 
+# elif inimeste_arv <= 80 and bussi_maht == 4:
+#     print("Люди поместяться 4")
+#
+# elif inimeste_arv <= 120 and bussi_maht == 5:
+#     print("Люди поместяться 5")
+# else:
+#     print("Люди не вместяться")
