@@ -62,6 +62,7 @@ try:
 except:
     print("Kirjutage täisarv")
 
+            #4.2
 
 a = int(input("Sisestage täisarv: "))
 b = 0
