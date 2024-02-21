@@ -64,8 +64,8 @@ print("Viimati lisatud nimi:", vimane)
 
 # Вывод возраст каждого человека
 
-#print("inimene vanus = ", inimene_vanus)
-#print(inimesed_ja_vanus)
+print("inimene vanus = ", inimene_vanus)
+
 
 #   KESKMINE, MINIMUM, MAKSIMUM JA SUMMA
 
